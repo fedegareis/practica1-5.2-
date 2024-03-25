@@ -1,0 +1,13 @@
+C:\Users\Fede\Desktop\ejercicio v52\ejercicio v52\bin\Debug\ejercicio v52.exe.config
+C:\Users\Fede\Desktop\ejercicio v52\ejercicio v52\bin\Debug\ejercicio v52.exe
+C:\Users\Fede\Desktop\ejercicio v52\ejercicio v52\bin\Debug\ejercicio v52.pdb
+C:\Users\Fede\Desktop\ejercicio v52\ejercicio v52\obj\Debug\ejercicio v52.csproj.AssemblyReference.cache
+C:\Users\Fede\Desktop\ejercicio v52\ejercicio v52\obj\Debug\ejercicio v52.csproj.SuggestedBindingRedirects.cache
+C:\Users\Fede\Desktop\ejercicio v52\ejercicio v52\obj\Debug\ejercicio_v52.frmejericiov52.resources
+C:\Users\Fede\Desktop\ejercicio v52\ejercicio v52\obj\Debug\ejercicio_v52.Menu.resources
+C:\Users\Fede\Desktop\ejercicio v52\ejercicio v52\obj\Debug\ejercicio_v52.Properties.Resources.resources
+C:\Users\Fede\Desktop\ejercicio v52\ejercicio v52\obj\Debug\ejercicio v52.csproj.GenerateResource.cache
+C:\Users\Fede\Desktop\ejercicio v52\ejercicio v52\obj\Debug\ejercicio v52.csproj.CoreCompileInputs.cache
+C:\Users\Fede\Desktop\ejercicio v52\ejercicio v52\obj\Debug\ejercicio v52.exe
+C:\Users\Fede\Desktop\ejercicio v52\ejercicio v52\obj\Debug\ejercicio v52.pdb
+C:\Users\Fede\Desktop\ejercicio v52\ejercicio v52\obj\Debug\ejercicio_v52.Registro.resources
