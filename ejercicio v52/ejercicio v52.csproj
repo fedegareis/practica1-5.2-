@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datosarchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datosarchivo.Designer.cs">
+      <DependentUpon>Datosarchivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmejericiov52.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Datosarchivo.resx">
+      <DependentUpon>Datosarchivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmejericiov52.resx">
       <DependentUpon>frmejericiov52.cs</DependentUpon>
     </EmbeddedResource>

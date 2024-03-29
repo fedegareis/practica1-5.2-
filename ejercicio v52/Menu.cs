@@ -22,5 +22,11 @@ namespace ejercicio_v52
             Registro regis = new Registro();
             regis.Show();
         }
+
+        private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Datosarchivo mostrar = new Datosarchivo();
+            mostrar.Show();
+        }
     }
 }

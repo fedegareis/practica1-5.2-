@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -13,21 +14,36 @@ namespace ejercicio_v52
 {
     public partial class Registro : Form
     {
+        public int cont = 0;
         public Registro()
         {
             InitializeComponent();
+           
         }
 
         private void btnregistro_Click(object sender, EventArgs e)
         {
+            string datos;
             if (verificar())
             {
-                lsvdatos.Items.Add(txtnombre.Text);
-                lsvdatos.Items[0].SubItems.Add(txtapellido.Text);
-                lsvdatos.Items[0].SubItems.Add(txtdni.Text);
-                lsvdatos.Items[0].SubItems.Add(txtcantidad.Text);
-                lsvdatos.Items[0].SubItems.Add(cbestado.Text);
-                lsvdatos.Items[0].SubItems.Add(dtpnac.Text);
+                
+
+                    lsvdatos.Items.Add(txtnombre.Text);
+                    lsvdatos.Items[cont].SubItems.Add(txtapellido.Text);
+                    lsvdatos.Items[cont].SubItems.Add(txtdni.Text);
+                    lsvdatos.Items[cont].SubItems.Add(txtcantidad.Text);
+                    lsvdatos.Items[cont].SubItems.Add(cbestado.Text);
+                    lsvdatos.Items[cont].SubItems.Add(dtpnac.Text);
+                    cont++;
+                    datos = txtnombre.Text + ";" + txtapellido.Text + ";" + txtdni.Text + ";" + txtcantidad.Text + ";" + cbestado.Text + ";" + dtpnac.Value.ToShortDateString();
+
+                    FileStream archivo = new FileStream("Personas.txt", FileMode.Append);
+                    StreamWriter grabar = new StreamWriter(archivo);
+                    grabar.WriteLine(datos);
+                    grabar.Close();
+                    archivo.Close();
+                    MessageBox.Show("Archivo grabado correctamente");
+
             }
         }
         
@@ -124,6 +140,7 @@ namespace ejercicio_v52
 
         private void Registro_Load(object sender, EventArgs e)
         {
+            
             cbestado.Items.Add("Soltero");
             cbestado.Items.Add("Casado");
             cbestado.Items.Add("Divorciado");
